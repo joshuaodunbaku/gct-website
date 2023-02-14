@@ -1,0 +1,34 @@
+#navbarBg {
+  background: linear-gradient(to bottom, rgba(48, 48, 48, 0.9), transparent);
+  /* background: rgb(118, 118, 118); */
+  backdrop-filter: blur(3px);
+  transition: all 500ms ease-in-out;
+}
+#navbarBgScroll {
+  /* background-image: linear-gradient(to left, rgb(49, 29, 107), rgba(49, 29, 107, 0.489)); */
+
+  /* background: #f8fafb; */
+  /* Make sure this color has an opacity of less than 1 */
+  background: #2b1e5b;
+  /* This be the blur */
+  backdrop-filter: blur(8px);
+  border-bottom: rgb(81, 81, 81) solid 1px;
+  transition: all 500ms ease-in-out;
+}
+#myMenuItems {
+  color: #f8fafb;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  /* font-weight: bold; */
+  border-left: 2px solid #70c0e8;
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 1.2rem;
+
+  /* background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.8)),
+    url(${({bgImage: image})=>image}) no-repeat center center; */
+}
+#myMenuItems:hover {
+  color: #70c0e8;
+  transition: all 500ms ease-in-out;
+}

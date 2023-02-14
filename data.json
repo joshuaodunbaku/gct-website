@@ -1,0 +1,92 @@
+{
+  "courses": [
+    {
+      "id": 19,
+      "name": "HTML",
+      "category": ["Web Development", "Front-End"],
+      "tutor": "Ibrahim Adubi"
+    },
+    {
+      "id": 20,
+      "name": "CSS",
+      "category": ["Web Development", "Front-End"],
+      "tutor": "Ibrahim Adubi"
+    },
+    {
+      "id": 21,
+      "name": "Bootstrap",
+      "category": ["Framework", "Web Design", "Front-End"],
+      "tutor": "Ibrahim Adubi"
+    },
+    {
+      "id": 19,
+      "name": "ReactJS",
+      "category": ["Library", "Web Development", "Front-End"],
+      "tutor": "Ibrahim Adubi"
+    },
+    {
+      "id": 19,
+      "name": "HTML",
+      "category": ["Web Development", "Front-End"],
+      "tutor": "Ibrahim Adubi"
+    },
+
+    {
+      "id": 19,
+      "name": "HTML",
+      "category": ["Web Development", "Front-End"],
+      "tutor": "Ibrahim Adubi"
+    },
+
+    {
+      "id": 19,
+      "name": "HTML",
+      "category": ["Web Development", "Front-End"],
+      "tutor": "Ibrahim Adubi"
+    },
+
+    {
+      "id": 19,
+      "name": "HTML",
+      "category": ["Web Development", "Front-End"],
+      "tutor": "Ibrahim Adubi"
+    },
+
+    {
+      "id": 19,
+      "name": "HTML",
+      "category": ["Web Development", "Front-End"],
+      "tutor": "Ibrahim Adubi"
+    },
+
+    {
+      "id": 19,
+      "name": "HTML",
+      "category": ["Web Development", "Front-End"],
+      "tutor": "Ibrahim Adubi"
+    },
+
+    {
+      "id": 19,
+      "name": "HTML",
+      "category": ["Web Development", "Front-End"],
+      "tutor": "Ibrahim Adubi"
+    },
+
+    {
+      "id": 19,
+      "name": "HTML",
+      "category": ["Web Development", "Front-End"],
+      "tutor": "Ibrahim Adubi"
+    }
+  ],
+
+  "tutors": [],
+  "students": [
+    {
+      "name": "John Doe",
+      "review": "Best Education coaching ceter, the staff here are very polite, understanding and have a kind nature. Best Web Development institute to get practical knowledge of web development and web design",
+      "imageUrl": "/public/logo192.png"
+    }
+  ]
+}
