@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { Hover } from './Course.style';
 
 const CourseCard = ({ courseDetail }) => {
-    let { name, id, preview, category, imgPath } = courseDetail;
+    let { name, preview, category, imgPath } = courseDetail;
     const location = useLocation();
     const presentUrl = `${location.pathname}/${name.toLowerCase()}`; // the url to the course click on
     let categoryName = category[0].replace(" ", '-').toLowerCase(); // select the first category of the category array and modify string
