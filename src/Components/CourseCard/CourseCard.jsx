@@ -13,7 +13,7 @@ const CourseCard = ({ courseDetail }) => {
             return `/courses/${categoryName}/${name.replace(" ", '-').toLowerCase()}`;
         }
         else {
-            return `${categoryName}/${name.replace(" ", '-').toLowerCase()}`;
+            return location.pathname = `${categoryName}/${name.replace(" ", '-').toLowerCase()}`;
         }
     };
     console.log(location.pathname, "at Course Card", presentUrl);
@@ -21,23 +21,23 @@ const CourseCard = ({ courseDetail }) => {
         <>
             {/* <Hover href={`/${courseurl}`}> */}
             <Hover href={`${createUrl()}`}>
-                <Card className="my-2 mx-md-2 b-card">
+                <Card className="my-sm-2 mx-md-2 h-100 my-auto b-card">
                     <Card.Img
                         variant="top"
                         src={imgPath}
                         height="180px"
                         width="100%"
                     />
-                    <Card.Body className="text-dark">
+                    <Card.Body className="text-dark d-flex flex-column">
                         <Card.Title className="fs-3">{name}</Card.Title>
                         {/* <Card.Title className="d-flex text-secondary fw-normal"><p>Tutor: {tutor}</p></Card.Title> */}
-                        <Card.Text>
+                        <Card.Text className='my-auto'>
                             {preview || "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."}
                         </Card.Text>
-                        <Card.Link className="btn btn-outline-warning">Learn More...</Card.Link>
+                        <Card.Link className="btn btn-outline-warning mt-auto">Learn More...</Card.Link>
                     </Card.Body>
                     <Card.Footer>
-                        {category.map((elem) => (<span id={elem} className="badge bg-secondary rounded-pill">{elem}</span>))}
+                        {category.map((elem) => (<span key={elem} className="badge bg-secondary rounded-pill">{elem}</span>))}
                     </Card.Footer>
                 </Card>
             </Hover>

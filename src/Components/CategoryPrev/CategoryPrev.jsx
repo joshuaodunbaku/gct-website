@@ -21,12 +21,14 @@ const CategoryPrev = ({ header, link }) => {
 
     return (
         <div className="container-lg py-4 mx-auto">
+            {/* <div className="py-4 mx-auto"> */}
             <NavLink to={`courses/${link}`} className="text-decoration-none">
                 <h1 className="text-decoration-none py-3">
                     <Hover>{header}{" >"}</Hover>
                 </h1>
             </NavLink>
-            <Grid className="d-flex flex-column align-self-center">
+            {/* <Grid className="d-flex flex-column align-items-center mx-auto"> */}
+            <Grid className="container-fluid">
                 {categoryCourses.slice(0, 4).map((course) => (
                     <CourseCard key={course.name} courseDetail={course} />
                 ))}

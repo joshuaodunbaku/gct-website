@@ -7,9 +7,9 @@ export const ShowcaseWrapper = styled.div`
   background-attachment: fixed;
   /* background-size: 100%, cover; */
   /* background-position: top center; */
-  height: ${({ height }) => height || "90vh"};
+  min-height: ${({ height }) => height || "90vh"};
   /* height: 90vh; */
-  padding: 0 30px;
+  /* padding: 0 30px; */
 
   @media (max-width: 578px) {
     height: ${({ height }) => height || "70vh"};
@@ -54,18 +54,18 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Abel", sans-serif;
+    /* font-family: "Abel", sans-serif; */
 }
 
 body {
     margin: 0;
     padding: 0;
     h1 {
-        color: var(--white);
+        /* color: var(--white); */
     }
     p {
-        font-size: 1rem;
-        color: var(--white);
+        font-size: 1.2rem;
+        /* color: var(--white); */
     }
 }
 `;

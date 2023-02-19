@@ -5,5 +5,6 @@ export const Hover = styled.a`
   :hover > .b-card {
     /* background-color: grey; */
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
   }
 `;
