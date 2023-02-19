@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import CategoryPrev from '../Components/CategoryPrev/CategoryPrev';
 import Footer from './Footer';
 import WordSpan from '../Components/WordSpan/WordSpan';
+import WavyBg from '../Components/AnimatedBg/WavyBg';
 
 const Home = () => {
     return (
@@ -31,11 +32,11 @@ const Home = () => {
                 </div>
             </ShowcaseWrapper>
 
-            <div className="container-lg mx-auto mt-4 m-5">
-                <h1 className="py-3">
+            <div className="mx-auto mt-4 m-5">
+                <h1 className="py-3 text-center">
                     Explore <WordSpan color={"lightBlue"}>Top</WordSpan> Courses
                 </h1>
-                <div className="d-flex mx-auto flex-column flex-md-row justify-content-center align-items-center">
+                <div className="container-lg d-flex mx-auto flex-column flex-md-row justify-content-center align-items-center">
                     <Card className="my-2 mx-sm-2">
                         <Card.Img
                             variant="top"
@@ -102,55 +103,64 @@ const Home = () => {
                 </div>
             </div>
             {/* ABOUT US */}
-            <div className="container-fluid">
-                <div className="row text-white p-2 p-md-5 py-4" id="aboutPrev">
-                    <div className="container-lg col-12 col-md-6 d-flex flex-column justify-content-center">
-                        <h1>About Us</h1>
-                        <p className="text-center text-md-left">
-                            <em>Genius Computer Technolgies</em> is registered as Training
-                            Institute and is located at Quarry Area, Abeokuta recognized for
-                            offering specialist training. We provide a
-                            diploma as well as certification training courses in the field
-                            of Web Designing, Software Development, Web Development and more.
-                            Our training course curriculum is planned to equip you with
-                            relevant information regarding the best and most current
-                            developments that are being made use of in the sector. We
-                            provide the expert and also trustworthy IT training courses to
-                            corporate and also specific clients. We have numerous training courses to
-                            provide, depending upon the requirements and also choices of our
-                            clients. Any individual could select the very best training
-                            course based on their requirements and also interests to become
-                            a specialized individual in that specific area.
-                        </p>
-                    </div>
-                    <div className="col-12 col-md-6 text-center d-flex align-items-center justify-content-center">
-                        {/* <img
+            <div className="container-fluid" id="aboutPrev">
+                <div className="container-lg">
+                    <div className="row text-white p-2 p-md-5 py-4">
+                        <div className="container-lg col-12 col-md-6 d-flex flex-column justify-content-center">
+                            <h1>About Us</h1>
+                            <p className="text-center text-md-left">
+                                <em>Genius Computer Technolgies</em> is registered as Training
+                                Institute and is located at Quarry Area, Abeokuta recognized for
+                                offering specialist training. We provide a
+                                diploma as well as certification training courses in the field
+                                of Web Designing, Software Development, Web Development and more.
+                                Our training course curriculum is planned to equip you with
+                                relevant information regarding the best and most current
+                                developments that are being made use of in the sector. We
+                                provide the expert and also trustworthy IT training courses to
+                                corporate and also specific clients. We have numerous training courses to
+                                provide, depending upon the requirements and also choices of our
+                                clients. Any individual could select the very best training
+                                course based on their requirements and also interests to become
+                                a specialized individual in that specific area.
+                            </p>
+                        </div>
+                        <div className="col-12 col-md-6 text-center d-flex align-items-center justify-content-center">
+                            {/* <img
                             src={require("../Assets/Images/showcase.jpg")}
                             alt=""
                             width={"100%"}
                         /> */}
-                        <ShowcaseImg width={"100%"} />
+                            <ShowcaseImg width={"100%"} />
+                        </div>
+                        <SlideInButton className='text-center my-2'>
+                            <Link to={"/about"}>
+                                <button className="css-button-sliding-to-left--yellow">
+                                    Learn More...
+                                </button></Link>
+                        </SlideInButton>
                     </div>
-                    <SlideInButton className='text-center my-3'>
-                        <Link to={"/about"}>
-                            <button className="css-button-sliding-to-left--yellow">
-                                Learn More...
-                            </button></Link>
-                    </SlideInButton>
                 </div>
+
             </div>
 
-            <div className="container-fluid bg-light my-5">
+            {/* <div className="container-fluid px-md-5 bg-light my-5"> */}
+            <div className="container-fluid px-md-5 bg-light my-5">
                 <CategoryPrev link="web-development" header="Web Development Courses" />
             </div>
-            <div className="container-fluid">
+            {/* <div className="container-fluid px-md-5"> */}
+            <div className="container-fluid px-md-5">
                 <CategoryPrev link={"software-development"} header={"Software Devlopment Courses"} />
             </div>
 
-            <div className="container-fluid">
+            {/* <div className="container-fluid px-md-5"> */}
+            <div className="container-fluid px-md-5">
                 <CategoryPrev link={"web-design"} header={"Web Design"} />
             </div>
 
+            <div className="contianer-fluid">
+                {/* <WavyBg /> */}
+            </div>
             <Footer />
         </Div>
     );

@@ -6,12 +6,14 @@ import { ShowcaseWrapper } from '../Components/Styles/GlobalStyle';
 import WordSpan from '../Components/WordSpan/WordSpan';
 import SlideButton from '../Components/SlideButton/SlideButton';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
+import WavyBg from '../Components/AnimatedBg/WavyBg';
 
 const AboutUs = () => {
     return (
         <>
             <ShowcaseWrapper className="text-white text-center d-flex flex-column justify-content-center align-items-center" bgImage={require("../Assets/Images/aboutUsShowcase.jpg")} height="50vh">
-                <h1>About Genius Computer Technologies</h1>
+                <h1>About <WordSpan color={"gold"}>Genius C</WordSpan>ompute<WordSpan color={"lightBlu"}>r Technologies</WordSpan></h1>
             </ShowcaseWrapper>
             <div className="container my-4 p-3 d-flex flex-column justify-content-center align-items-center">
                 <p className="lead m-auto">Genius Computer Technologies is an ICT and computer training institute located at ...</p>
@@ -28,21 +30,31 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-            <div className="container-fluid">
-                <div className='row my-3 py-4 bg-light text-center'>
-                    <div className='col-md col-12 d-none d-md-block'>
-                        {/* <img src={require("../Assets/Untitled/clark-tibbs-oqStl2L5oxI-unsplash.jpg")} width="100%" alt="" /> */}
-                        <Img3 width="100%" height="150px" />
+            <div className="container-fluid bg-light">
+                <div className="container-lg py-4">
+                    <div className='row my-3 py-4 text-center'>
+                        <div className='col-md col-12 d-none d-md-block'>
+                            {/* <img src={require("../Assets/Untitled/clark-tibbs-oqStl2L5oxI-unsplash.jpg")} width="100%" alt="" /> */}
+                            <Img3 width="100%" height="150px" />
+                        </div>
+                        <div className='col-md col-12 d-flex flex-column align-items-center justify-content-center'>
+                            <WordSpan className="">Our Mission</WordSpan>
+                            <p className='w-75'>To help our students see the practical real life  benefit of ICT and computer knowledge that can be applied easily to their chosen career path or businesses, helping them to see technology as an asset not a liability.</p>
+                        </div>
+                        <Link to={"/courses"}>
+                            <SlideButton children={"Click here to view our Courses"} />
+                        </Link>
                     </div>
-                    <div className='col-md col-12 d-flex flex-column align-items-center justify-content-center'>
-                        <WordSpan className="">Our Mission</WordSpan>
-                        <p className='w-75'>To help our students see the practical real life  benefit of ICT and computer knowledge that can be applied easily to their chosen career path or businesses, helping them to see technology as an asset not a liability.</p>
-                    </div>
-                    <Link to={"/courses"}>
-                        <SlideButton children={"Click here to view our Courses"} />
-                    </Link>
                 </div>
             </div>
+            <div className="position-relative container-fluid p-5 text-light">
+                <WavyBg />
+                <div className="container-lg">
+                    <h1>Hello World</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum debitis deleniti rerum mollitia consequatur pariatur facilis aliquid dolore? Molestiae sit fugit autem reprehenderit vitae sint laboriosam commodi officia itaque iste minus dicta consequuntur iure corporis aspernatur vero dignissimos veritatis tenetur, culpa quisquam? Saepe magnam dolore perspiciatis iste eveniet labore, numquam eligendi modi qui soluta nesciunt odio porro tenetur. Aliquam, molestias? Quo reiciendis cumque alias expedita accusamus atque voluptatem nam soluta ex! Harum dignissimos velit, facilis praesentium corporis nam sed unde repellat animi assumenda voluptatibus aliquam, temporibus corrupti quae commodi officia voluptas nisi sapiente hic molestiae. Mollitia commodi ducimus fugiat facere?</p>
+                </div>
+            </div>
+            <Footer />
         </>
     );
 };

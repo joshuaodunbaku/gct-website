@@ -5,11 +5,13 @@ import App from "./App";
 
 // Styles
 import bootstrap from "bootstrap/dist/css/bootstrap.min.css";
+import { GlobalStyle } from "./Components/Styles/GlobalStyle";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <GlobalStyle />
       <App bootstrap={bootstrap} />
     </BrowserRouter>
   </React.StrictMode>

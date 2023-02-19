@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Footer = () => {
     const scrollToTop = () => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth', duration: "10s" });
     };
+    useEffect(() => scrollToTop(), []);
     return (
         <div
             className="container-fluid text-center py-4 text-white d-flex flex-column align-items-center justify-content-center"

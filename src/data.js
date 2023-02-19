@@ -115,6 +115,105 @@ export const data = {
       category: ["Software Development", "Back-End"],
       tutor: "Ibrahim Adubi",
     },
+    {
+      id: 14,
+      name: "Git $ GitHub",
+      imgPath: "",
+      preview:
+        "GitHub, Inc. is an Internet hosting service for software development",
+      category: ["Web Development", "Database"],
+      tutor: "Ibrahim Adubi",
+    },
+    {
+      id: 15,
+      name: "Mobile App Development",
+      imgPath: "",
+      preview:
+        "Mobile application development is the process of making software for smartphones, tablets and digital assistants, most commonly for the Android and iOS",
+      category: ["Software Development"],
+      tutor: "Ibrahim Adubi",
+    },
+    {
+      id: 16,
+      name: "Web Programming",
+      imgPath: "",
+      preview:
+        "Web development is the work involved in developing a website for the Internet or an intranet.",
+      category: ["Software Development"],
+      tutor: "Ibrahim Adubi",
+    },
+    {
+      id: 17,
+      name: "Cyber Security",
+      imgPath: "",
+      preview:
+        "Computer security, cybersecurity, or information technology security is the protection of computer systems and networks from attack by malicious actors that may result in unauthorized information",
+      category: ["Software Engineering"],
+      tutor: "Ibrahim Adubi",
+    },
+    {
+      id: 18,
+      name: "Java Desktop Application Development",
+      imgPath: "",
+      preview:
+        "Java provides many APIs and reusable classes using which we can develop GUI applications. One of the oldest kits provided by Java is Abstract Windowing ToolKit or AWT.",
+      category: ["Software Development", "Back-End"],
+      tutor: "Ibrahim Adubi",
+    },
+    {
+      id: 19,
+      name: "SQL",
+      imgPath: "",
+      preview:
+        "Structured Query Language. SQL lets you access and manipulate databases.",
+      category: ["Database", "Back-End"],
+      tutor: "Ibrahim Adubi",
+    },
+    {
+      id: 20,
+      name: "Database Management",
+      imgPath: "",
+      preview:
+        "Learn how to develop and engineer an advanced database website using Java as your back-end web development training.",
+      category: ["Database"],
+      tutor: "Ibrahim Adubi",
+    },
+    {
+      id: 21,
+      name: "Oracle SQL",
+      imgPath: "",
+      preview:
+        "It is a database commonly used for running online transaction processing, data warehousing and mixed database workloads",
+      category: ["Database", "Back-End"],
+      tutor: "Ibrahim Adubi",
+    },
+    {
+      id: 22,
+      name: "Data Structures",
+      imgPath: "",
+      preview:
+        "data structure is a data organization, management, and storage format that is usually chosen for efficient access to data.",
+      category: ["Software Engineering", "Back-End"],
+      tutor: "Ibrahim Adubi",
+    },
+    {
+      id: 23,
+      name: "Software Architecture",
+      imgPath: "",
+      preview:
+        "Software architecture is the set of structures needed to reason about a software system and the discipline of creating such structures and systems.",
+      category: ["Software Engineering", "Back-End"],
+      tutor: "Ibrahim Adubi",
+    },
+    {
+      id: 24,
+      name: "MicroService",
+      imgPath: "",
+      preview:
+        "Microservices are an architectural and organizational approach to software development where software is composed of small independent services that communicate over well-defined APIs.",
+      category: ["Software Development", "Back-End"],
+      tutor: "Ibrahim Adubi",
+    },
   ],
 
   tutors: [],
