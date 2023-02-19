@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 import CategoryPrev from '../Components/CategoryPrev/CategoryPrev';
 import Footer from './Footer';
 import WordSpan from '../Components/WordSpan/WordSpan';
-import WavyBg from '../Components/AnimatedBg/WavyBg';
 
 const Home = () => {
     return (
