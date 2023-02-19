@@ -13,7 +13,7 @@ const AboutUs = () => {
     return (
         <>
             <ShowcaseWrapper className="text-white text-center d-flex flex-column justify-content-center align-items-center" bgImage={require("../Assets/Images/aboutUsShowcase.jpg")} height="50vh">
-                <h1>About <WordSpan color={"gold"}>Genius C</WordSpan>ompute<WordSpan color={"lightBlu"}>r Technologies</WordSpan></h1>
+                <h1>About <WordSpan color={"gold"}>Genius C</WordSpan>ompute<WordSpan color={"lightBlue"}>r Technologies</WordSpan></h1>
             </ShowcaseWrapper>
             <div className="container my-4 p-3 d-flex flex-column justify-content-center align-items-center">
                 <p className="lead m-auto">Genius Computer Technologies is an ICT and computer training institute located at ...</p>
