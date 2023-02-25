@@ -1,22 +1,23 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import { useLocation } from 'react-router-dom';
+import { spaceToHypen } from '../../helpers';
 import { Hover } from './Course.style';
 
 const CourseCard = ({ courseDetail }) => {
     let { name, preview, category, imgPath } = courseDetail;
     const location = useLocation();
     const presentUrl = `${location.pathname}/${name.toLowerCase()}`; // the url to the course click on
-    let categoryName = category[0].replace(" ", '-').toLowerCase(); // select the first category of the category array and modify string
+    let categoryName = spaceToHypen(category[0]).toLowerCase(); // select the first category of the category array and modify string
     const createUrl = () => {
         if (presentUrl !== "/courses" && !presentUrl.includes("courses")) {
-            return `/courses/${categoryName}/${name.replace(" ", '-').toLowerCase()}`;
+            return `/courses/${categoryName}/${spaceToHypen(name).toLowerCase()}`;
         }
         else {
-            return location.pathname = `${categoryName}/${name.replace(" ", '-').toLowerCase()}`;
+            return location.pathname = `${categoryName}/${spaceToHypen(name).toLowerCase()}`;
         }
     };
-    console.log(location.pathname, "at Course Card", presentUrl);
+    console.log(location.pathname, "at Course Card, ", presentUrl);
     return (
         <>
             {/* <Hover href={`/${courseurl}`}> */}

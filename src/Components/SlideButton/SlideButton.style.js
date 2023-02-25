@@ -3,8 +3,8 @@ import styled from "styled-components";
 // Sliding-in background button
 export const Wrapper = styled.div`
   .css-button-sliding-to-left--yellow {
-    min-width: 150px;
-    height: 40px;
+    min-width: ${({ width }) => width || "150px"};
+    height: ${({ height }) => height || "40px"};
     color: #fff;
     padding: 5px 10px;
     font-weight: bold;
@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
     position: relative;
     display: inline-block;
     outline: none;
-    border-radius: 5px;
+    border-radius: ${({ radius }) => radius || "5px"};
     z-index: 0;
     background: transparent;
     overflow: hidden;

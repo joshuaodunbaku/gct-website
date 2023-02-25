@@ -1,15 +1,35 @@
-import React from 'react';
-import { ShowcaseWrapper } from '../Components/Styles/GlobalStyle';
+import { Link, useLocation, useParams } from "react-router-dom";
+import BreadCrumb from "../Components/BreadCrumb/BreadCrumb";
+import SlideButton from "../Components/SlideButton/SlideButton";
+import { data } from "../data";
+import { hyphenToSpace } from "../helpers";
+import Footer from "./Footer";
 
 const Course = () => {
+    const { name: getClickedCourse } = useParams();
+    const { courses } = data;
+    let clickedCourse = courses.filter((elem) => elem.name.toLowerCase() === hyphenToSpace(getClickedCourse));
+    let { name, imgPath, preview } = clickedCourse[0];
+    console.log(clickedCourse);
+    console.log(getClickedCourse, "from Course Comp");
     return (
         <>
-            <ShowcaseWrapper height="50vh" bgImage={require("../Assets/Images/austin-distel-rxpThOwuVgE-unsplash.jpg")}>
-                <div className="container-fluid" id="course-showcase-color">
-                    <p className="p-5 bg-warning">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque possimus animi nobis recusandae officiis velit nisi voluptate in aliquid eligendi aut adipisci, repellendus voluptates nam, ab iste distinctio enim libero quam incidunt id. Excepturi, explicabo quisquam laudantium beatae perspiciatis non quas veritatis modi nemo adipisci aperiam ipsa illo, reprehenderit esse!</p>
+            <BreadCrumb className="shadow shadow-lg" coursePath={useLocation().pathname.replace("/", "")} />
+            <div className="container-fluid bg-light d-flex flex-column justify-content-center" style={{ height: "80vh" }}>
+                <div className="container-lg d-flex flex-column flex-md-row align-items-center">
+                    <div className="order-2 order-md-1 me-md-4">
+                        <h1 className="display-1">{name}</h1>
+                        <p className="fs-4">{preview}
+                        </p>
+                        <a target={"_blank"} rel={"noreferrer"} href={"https://wa.me/2348034262759"}><SlideButton height={"50px"} radius="50vw">Apply Now</SlideButton></a>
+                    </div>
+                    <div className="order-1 order-md-2">
+                        <img src={imgPath} alt="img" style={{ maxHeight: "500px" }} width={"100%"} />
+
+                    </div>
                 </div>
-            </ShowcaseWrapper>
-            <h1>The course here</h1>
+            </div>
+            <Footer />
         </>
     );
 };

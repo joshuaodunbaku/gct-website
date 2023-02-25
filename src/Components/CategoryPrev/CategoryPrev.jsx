@@ -3,6 +3,7 @@ import { Hover } from "./CategoryPrev.style";
 import { NavLink } from 'react-router-dom';
 import Grid from "../Grid/Grid";
 import CourseCard from "../CourseCard/CourseCard";
+import { hyphenToSpace } from "../../helpers";
 
 const CategoryPrev = ({ header, link }) => {
     console.log("heres from category preview", link);
@@ -10,7 +11,7 @@ const CategoryPrev = ({ header, link }) => {
 
     let categoryCourses = [];
     // removes the hyphen from the link
-    let categoryName = link.replace("-", ' ').toLowerCase();
+    let categoryName = hyphenToSpace(link).toLowerCase();
     console.log(categoryName);
     // sets the courses that are in a category
     categoryCourses = courses.filter((elem) => elem.category.find(e => {

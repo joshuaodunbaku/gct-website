@@ -19,7 +19,7 @@ export const Div = styled.div`
 // Sliding-in background button
 export const SlideInButton = styled.div`
   .css-button-sliding-to-left--yellow {
-    width: 250px;
+    /* width: 250px; */
     height: 40px;
     color: #fff;
     padding: 5px 10px;

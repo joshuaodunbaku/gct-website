@@ -6,13 +6,14 @@ import Grid from '../Components/Grid/Grid';
 import { ShowcaseWrapper } from '../Components/Styles/GlobalStyle';
 import WordSpan from '../Components/WordSpan/WordSpan';
 import { data } from '../data';
+import { hyphenToSpace } from '../helpers';
 import Footer from './Footer';
 
 const Category = () => {
     const { courses } = data;
     const { categories } = useParams();
-
-    let categoryName = categories.replace("-", ' ').toLowerCase();
+    console.log(categories, "from Category Comp");
+    let categoryName = hyphenToSpace(categories).toLowerCase();
 
     // gets the courses that are in a category
     let categoryCourses = courses.filter((elem) => elem.category.find(e => {
