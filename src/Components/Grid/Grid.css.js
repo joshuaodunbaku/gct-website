@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
 export const Content = styled.div`
   display: grid;
   /* grid-template-columns: repeat(3, 30%) */
-  /* grid-template-columns: repeat(4, 1fr); */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  // grid-template-columns: repeat(4, 1fr); /* */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 10px 0;
 `;

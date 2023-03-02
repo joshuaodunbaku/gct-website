@@ -12,7 +12,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <GlobalStyle />
-      <App bootstrap={bootstrap} />
+      <App />
     </BrowserRouter>
   </React.StrictMode>
 );

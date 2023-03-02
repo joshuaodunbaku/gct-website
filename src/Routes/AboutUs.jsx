@@ -7,15 +7,17 @@ import WordSpan from '../Components/WordSpan/WordSpan';
 import SlideButton from '../Components/SlideButton/SlideButton';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
+import NavBar from './Navbar';
 
 const AboutUs = () => {
     return (
         <>
+            <NavBar />
             <ShowcaseWrapper className="text-white text-center d-flex flex-column justify-content-center align-items-center" bgImage={require("../Assets/Images/aboutUsShowcase.jpg")} height="50vh">
                 <h1>About <WordSpan color={"gold"}>Genius</WordSpan> Computer <WordSpan color={"lightBlue"}>Technologies</WordSpan></h1>
             </ShowcaseWrapper>
             <div className="container my-4 p-3 d-flex flex-column justify-content-center align-items-center">
-                <p className="lead m-auto">Genius Computer Technologies is an ICT and computer training institute located at ...</p>
+                <p className="lead m-auto">Genius Computer Technologies is an ICT and computer training institute located at Quarry Rd., Abeokuta, Ogun State.</p>
             </div>
             <div className="container-lg my-5">
                 <div className="row align-items-center mx-1 shadow-sm py-5 px-2 border border-light">

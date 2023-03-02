@@ -8,6 +8,7 @@ import WordSpan from '../Components/WordSpan/WordSpan';
 import { data } from '../data';
 import { hyphenToSpace } from '../helpers';
 import Footer from './Footer';
+import NavBar from './Navbar';
 
 const Category = () => {
     const { courses } = data;
@@ -32,6 +33,7 @@ const Category = () => {
     console.log(location.pathname);
     return (
         <>
+            <NavBar />
             <ShowcaseWrapper className="text-white text-center d-flex flex-column justify-content-center align-items-center" bgImage={require("../Assets/Images/showcase.jpg")} height="30vw">
                 <h1 className='fw-bold'>
                     Explore Different <WordSpan color={"lightBlue"}>{categoryName.charAt(0).toUpperCase() + categoryName.slice(1)}</WordSpan> Courses

@@ -1,8 +1,9 @@
 import React from 'react';
+import { Navbar } from 'react-bootstrap';
 
 const Reviews = () => {
     return (
-        <div>Reviews</div>
+        <Navbar />
     );
 };
 

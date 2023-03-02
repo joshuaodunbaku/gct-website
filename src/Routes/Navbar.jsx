@@ -53,43 +53,12 @@ const NavBar = () => {
                   <Dropdown.Menu>
                     <Dropdown.Item><Link className="px-3 text-decoration-none text-dark w-100" to="/courses/web-design">Web Design</Link></Dropdown.Item>
                     <Dropdown.Item><Link className="px-3 text-decoration-none text-dark w-100" to="/courses/web-development">Web Development</Link></Dropdown.Item>
-                    {/* <Dropdown.Item><Link className="px-3 text-decoration-none text-dark w-100" to="/courses/javascript">Javascript</Link></Dropdown.Item>
-                    <Dropdown.Item><Link className="px-3 text-decoration-none text-dark w-100" to="/courses/bootstrap">BOOTSTRAP(Framework)</Link></Dropdown.Item>
-                    <Dropdown.Item><Link className="px-3 text-decoration-none text-dark w-100" to="/courses/reactjs">ReactJS(Framework)</Link></Dropdown.Item> */}
-                    <Dropdown.Item><Link className="px-3 text-decoration-none text-dark w-100" to="courses">All Courses</Link></Dropdown.Item>
+                    <Dropdown.Item><Link className="px-3 text-decoration-none text-dark w-100" to="/courses/software-development">Software Development</Link></Dropdown.Item>
+                    {/*<Dropdown.Item><Link className="px-3 text-decoration-none text-dark w-100" to="/courses/reactjs">ReactJS(Framework)</Link></Dropdown.Item> */}
+                    <Dropdown.Item><Link className="px-3 text-decoration-none text-dark w-100" to="/courses">All Courses</Link></Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </Nav.Link>
-
-              <Nav.Link>
-                <Dropdown className="d-lg-flex align-items-center justify-content-center">
-                  <Dropdown.Toggle as="span" id="myMenuItems">
-                    Industrial Training
-                  </Dropdown.Toggle>
-
-                  <Dropdown.Menu>
-                    <Dropdown.Item href="/industrial-traiing/bca-students">BCA Students</Dropdown.Item>
-                    <Dropdown.Item href="/industrial-traiing/mca-students">MCA Students</Dropdown.Item>
-                    <Dropdown.Item href="/industrial-traiing/it-students">BSC(IT) Students</Dropdown.Item>
-                    <Dropdown.Item href="/industrial-traiing/cs-students">B.Tech (CS) Students</Dropdown.Item>
-                    <Dropdown.Item href="/industrial-traiing/electrical-student">B.Tech Electrical Students</Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-              </Nav.Link>
-
-              <Nav.Link><Link to="/reviews"><span id="myMenuItems">Reviews</span></Link></Nav.Link>
-
-              {/* <NavDropdown bg="transparent" title="Dropdown" className="fs-5" id="basic-nav-dropdown myMenuItems">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -105,140 +74,6 @@ const NavBar = () => {
                     </Nav>
                 </Container>
             </Navbar> */}
-      {/* 
-        <Navbar
-          className="border shadow-sm border-bottom-2 ps-3 pe-3"
-          collapseOnSelect
-          expand="lg"
-          variant="light"
-        >
-          <Navbar.Brand href="/" style={{ fontFamily: "AmetheystBoldItalic" }}>
-            <img
-              alt=""
-              src={logo}
-              height="30"
-              className="d-inline-block align-top outline-light"
-              style={{
-                boxShadow: `0 2px 5px 0  
-                        rgba(255, 255, 255, 0.5), 0  
-                        2px 10px 0 rgba(255, 255, 255, 1)`,
-              }}
-            />{" "}
-            InvenTree
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto ms-auto">
-              <NavLink className="nav-link" to="/">
-                Home
-              </NavLink>
-
-              <NavDropdown title="Views" className="collasible-nav-dropdown">
-                <NavDropdown.Item>
-                  <NavLink className="dropdown-item" to="/items">
-                    Items
-                  </NavLink>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
-                  <NavLink className="dropdown-item" to="/store/production">
-                    Production
-                  </NavLink>
-                </NavDropdown.Item>
-              </NavDropdown>
-
-              {authUser && (
-                <NavLink className="nav-link" to="/customers">
-                  Customers
-                </NavLink>
-              )}
-
-              {authUser && (
-                <NavDropdown title="Store" className="collasible-nav-dropdown">
-                  <NavDropdown.Item>
-                    <NavLink className="dropdown-item" to="/store/sales">
-                      Sales
-                    </NavLink>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item>
-                    <NavLink className="dropdown-item" to="/store/production">
-                      Production
-                    </NavLink>
-                  </NavDropdown.Item>
-                </NavDropdown>
-              )}
-
-              {authUser && (
-                <NavDropdown
-                  title="Transactions"
-                  className="collasible-nav-dropdown"
-                >
-                  <NavDropdown.Item>
-                    <NavLink className="dropdown-item" to="/transactions/sales">
-                      Sales
-                    </NavLink>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/transactions/services"
-                    >
-                      Services
-                    </NavLink>
-                  </NavDropdown.Item>
-                </NavDropdown>
-              )}
-
-              {authUser && (
-                <NavLink className="nav-link" to="/production">
-                  Production
-                </NavLink>
-              )}
-
-              {authUser && (
-                <NavLink className="nav-link" to="/dashboard">
-                  Dashboard
-                </NavLink>
-              )}
-
-              <NavLink className="nav-link" to="/home">
-                FAQ
-              </NavLink>
-            </Nav>
-            <Form inline>
-              {authUser && (
-                <FormLabel
-                  className="me-5"
-                  style={{ fontFamily: "AmetheystBoldItalic" }}
-                >
-                  {authUser.userName}
-                </FormLabel>
-              )}
-
-              {!authUser && (
-                <Button
-                  className="btn btn-outline-dark btn-lg"
-                  variant="outline-primary"
-                  onClick={() => login("/login")}
-                >
-                  Sign In
-                </Button>
-              )}
-
-              {authUser && (
-                <Button
-                  role="button"
-                  className="btn btn-outline-dark btn-lg"
-                  variant="outline-primary"
-                  onClick={() => LogOut()}
-                >
-                  Sign Out
-                </Button>
-              )}
-            </Form>
-          </Navbar.Collapse>
-        </Navbar> */}
-
-      <Outlet />
     </>
   );
 };

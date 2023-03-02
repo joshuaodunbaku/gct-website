@@ -4,6 +4,7 @@ import SlideButton from "../Components/SlideButton/SlideButton";
 import { data } from "../data";
 import { hyphenToSpace } from "../helpers";
 import Footer from "./Footer";
+import NavBar from "./Navbar";
 
 const Course = () => {
     const { name: getClickedCourse } = useParams();
@@ -14,6 +15,7 @@ const Course = () => {
     console.log(getClickedCourse, "from Course Comp");
     return (
         <>
+            <NavBar />
             <BreadCrumb className="shadow shadow-lg" coursePath={useLocation().pathname.replace("/", "")} />
             <div className="container-fluid bg-light d-flex flex-column justify-content-center" style={{ height: "80vh" }}>
                 <div className="container-lg d-flex flex-column flex-md-row align-items-center">
