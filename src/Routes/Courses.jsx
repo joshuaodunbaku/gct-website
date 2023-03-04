@@ -1,5 +1,4 @@
 import React from 'react';
-// import { useParams } from 'react-router-dom';
 import CourseCard from '../Components/CourseCard/CourseCard';
 import Grid from '../Components/Grid/Grid';
 import { data } from '../data';
@@ -7,7 +6,6 @@ import Footer from './Footer';
 import NavBar from './Navbar';
 
 const Courses = () => {
-    // const {category} = useParams()
     return (
         <>
             <NavBar />

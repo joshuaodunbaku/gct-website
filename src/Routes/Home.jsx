@@ -29,7 +29,6 @@ const Home = () => {
                         along with Software Engineering.
                     </p>
                     <SlideButton>
-                        {/* <button className="css-button-sliding-to-left--yellow"> */}
                         <a
                             target={"_blank"}
                             rel={"noreferrer"}
@@ -38,7 +37,6 @@ const Home = () => {
                         >
                             Get Started
                         </a>
-                        {/* </button> */}
                     </SlideButton>
                 </div>
             </ShowcaseWrapper>
@@ -168,18 +166,10 @@ const Home = () => {
                                 Learn More...
                             </SlideButton>
                         </Link>
-
-                        {/* <SlideInButton className='text-center my-2'>
-                            <Link to={"/about"}>
-                                <button className="css-button-sliding-to-left--yellow">
-                                    Learn More...
-                                </button></Link>
-                        </SlideInButton> */}
                     </div>
                 </div>
             </div>
 
-            {/* <div className="container-fluid px-md-5 bg-light my-5"> */}
             <div className="container-fluid px-md-5 bg-light my-5">
                 <CategoryPrev link="web-development" header="Web Development Courses" />
             </div>
@@ -219,7 +209,6 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* <div className="container-fluid px-md-5"> */}
             <div className="container-fluid px-md-5">
                 <CategoryPrev
                     link={"software-development"}
@@ -227,7 +216,6 @@ const Home = () => {
                 />
             </div>
 
-            {/* <div className="container-fluid px-md-5"> */}
             <div className="container-fluid px-md-5">
                 <CategoryPrev link={"web-design"} header={"Web Design"} />
             </div>

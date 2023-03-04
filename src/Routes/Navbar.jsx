@@ -37,7 +37,6 @@ const NavBar = () => {
                 className="shadow-lg align-top"
               />{' '}
             </Link>
-            {/* <p>Genius</p> */}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

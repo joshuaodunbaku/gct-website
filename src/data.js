@@ -115,9 +115,7 @@ export const data = {
     {
       id: 10,
       name: "Database Management System (MySQL)",
-      // name: "MySQL",
-      // imgPath: require("./Assets/Images/databaseManagement.jpg"),
-      imgPath: require("./Assets/Images/unsplash-mysql.jpg"),
+      imgPath: require("./Assets/Images/databaseManagement.jpg"),
       info: {
         preview:
           "Learn how to develop and engineer an advanced database website using Java as your back-end web development training.",

@@ -1,21 +1,19 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { spaceToHypen } from "../../helpers";
 import { Hover } from "./Course.style";
 
 const CourseCard = ({ courseDetail }) => {
   let { name, info, category, imgPath } = courseDetail;
-  const location = useLocation();
   const navigate = useNavigate();
-  const presentUrl = `${location.pathname}/${name.toLowerCase()}`; // the url to the course click on
+  // const presentUrl = `${location.pathname}/${name.toLowerCase()}`; // the url to the course click on
   let categoryName = spaceToHypen(category[0]).toLowerCase(); // select the first category of the category array and modify string
   const createUrl = () => {
     return `/courses/${categoryName}/${spaceToHypen(name).toLowerCase()}`;
   };
   return (
     <>
-      {/* <Hover href={`/${courseurl}`}> */}
       <Hover>
         <Card className="my-sm-2 mx-md-2 h-100 my-auto b-card">
           <Card.Img variant="top" src={imgPath} height="200px" width="100%" />
