@@ -147,7 +147,7 @@ export const data = {
         note: "",
         additionalInfo: "",
         topics: [
-          "<b> PART 1</b>",
+          "PART 1",
           "Introduction to Java Applications",
           "Variables and Data Types",
           "Control Statement",
@@ -162,7 +162,7 @@ export const data = {
           "Multithreading",
           "Networking",
           "",
-          "<b> PART 2</b>",
+          "PART 2",
           "Introduction to Spring framework",
           "IOC & DI in Spring",
           "Spring AOP",
