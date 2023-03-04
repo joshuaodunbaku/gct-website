@@ -5,7 +5,6 @@ import { Wrapper, Content } from './BreadCrumb.css';
 
 const BreadCrumb = ({ coursePath }) => {
     let breadCrumb = coursePath.split("/");
-    console.log(breadCrumb);
     return (
         <Wrapper>
             <Content>

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link, Outlet, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
 import "../Components/Styles/navbar.css";
 
@@ -54,7 +54,6 @@ const NavBar = () => {
                     <Dropdown.Item><Link className="px-3 text-decoration-none text-dark w-100" to="/courses/web-design">Web Design</Link></Dropdown.Item>
                     <Dropdown.Item><Link className="px-3 text-decoration-none text-dark w-100" to="/courses/web-development">Web Development</Link></Dropdown.Item>
                     <Dropdown.Item><Link className="px-3 text-decoration-none text-dark w-100" to="/courses/software-development">Software Development</Link></Dropdown.Item>
-                    {/*<Dropdown.Item><Link className="px-3 text-decoration-none text-dark w-100" to="/courses/reactjs">ReactJS(Framework)</Link></Dropdown.Item> */}
                     <Dropdown.Item><Link className="px-3 text-decoration-none text-dark w-100" to="/courses">All Courses</Link></Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
@@ -63,17 +62,6 @@ const NavBar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
-      {/* <Navbar bg="primary" variant="dark">
-                <Container>
-                    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-                    <Nav className="mx-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#features">Features</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
-                    </Nav>
-                </Container>
-            </Navbar> */}
     </>
   );
 };

@@ -6,7 +6,6 @@ import { Hover } from "./Course.style";
 
 const CourseCard = ({ courseDetail }) => {
   let { name, info, category, imgPath } = courseDetail;
-  console.log(info);
   const location = useLocation();
   const navigate = useNavigate();
   const presentUrl = `${location.pathname}/${name.toLowerCase()}`; // the url to the course click on
@@ -14,18 +13,17 @@ const CourseCard = ({ courseDetail }) => {
   const createUrl = () => {
     return `/courses/${categoryName}/${spaceToHypen(name).toLowerCase()}`;
   };
-  console.log(location.pathname, "at Course Card, ", presentUrl);
   return (
     <>
       {/* <Hover href={`/${courseurl}`}> */}
       <Hover>
         <Card className="my-sm-2 mx-md-2 h-100 my-auto b-card">
-          <Card.Img variant="top" src={imgPath} height="180px" width="100%" />
+          <Card.Img variant="top" src={imgPath} height="200px" width="100%" />
           <Card.Body className="text-dark d-flex flex-column">
             <Card.Title className="fs-3">{name}</Card.Title>
             {/* <Card.Title className="d-flex text-secondary fw-normal"><p>Tutor: {tutor}</p></Card.Title> */}
             <Card.Text className="my-auto">
-              {info["preview"] ||
+              {info.preview ||
                 "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."}
             </Card.Text>
             <Card.Link

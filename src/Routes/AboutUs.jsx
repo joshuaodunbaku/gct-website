@@ -1,6 +1,5 @@
 import React from 'react';
 import { ReactComponent as Img1 } from "../Assets/Images/undraw_web_devices_re_m8sc.svg";
-// import { ReactComponent as Img2 } from "../Assets/Images/undraw_programming_re_kg9v.svg";
 import { ReactComponent as Img3 } from "../Assets/Images/undraw_asset_selection_re_k5fj.svg";
 import { ShowcaseWrapper } from '../Components/Styles/GlobalStyle';
 import WordSpan from '../Components/WordSpan/WordSpan';
@@ -18,6 +17,10 @@ const AboutUs = () => {
             </ShowcaseWrapper>
             <div className="container my-4 p-3 d-flex flex-column justify-content-center align-items-center">
                 <p className="lead m-auto">Genius Computer Technologies is an ICT and computer training institute located at Quarry Rd., Abeokuta, Ogun State.</p>
+
+                <div className="border rounded p-3">
+                    <iframe title='location' src="https://www.google.com/maps/embed?pb=!4v1677854516568!6m8!1m7!1s2IGte5fqmKB5updktfjp9Q!2m2!1d7.135447066233545!2d3.32676799506113!3f41.432670173653584!4f6.9038258134374075!5f2.494741625711682" style={{ border: "0", width: "300px", height: "450" }} allowFullScreen="true" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
             <div className="container-lg my-5">
                 <div className="row align-items-center mx-1 shadow-sm py-5 px-2 border border-light">
@@ -46,13 +49,6 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className="position-relative container-fluid p-5 text-light">
-                <WavyBg />
-                <div className="container-lg">
-                    <h1>Hello World</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum debitis deleniti rerum mollitia consequatur pariatur facilis aliquid dolore? Molestiae sit fugit autem reprehenderit vitae sint laboriosam commodi officia itaque iste minus dicta consequuntur iure corporis aspernatur vero dignissimos veritatis tenetur, culpa quisquam? Saepe magnam dolore perspiciatis iste eveniet labore, numquam eligendi modi qui soluta nesciunt odio porro tenetur. Aliquam, molestias? Quo reiciendis cumque alias expedita accusamus atque voluptatem nam soluta ex! Harum dignissimos velit, facilis praesentium corporis nam sed unde repellat animi assumenda voluptatibus aliquam, temporibus corrupti quae commodi officia voluptas nisi sapiente hic molestiae. Mollitia commodi ducimus fugiat facere?</p>
-                </div>
-            </div> */}
             <Footer />
         </>
     );

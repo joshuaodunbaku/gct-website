@@ -6,20 +6,17 @@ import CourseCard from "../CourseCard/CourseCard";
 import { hyphenToSpace } from "../../helpers";
 
 const CategoryPrev = ({ header, link }) => {
-  console.log("heres from category preview", link);
   const { courses } = data;
 
   let categoryCourses = [];
   // removes the hyphen from the link
   let categoryName = hyphenToSpace(link).toLowerCase();
-  console.log(categoryName);
   // sets the courses that are in a category
   categoryCourses = courses.filter((elem) =>
     elem.category.find((e) => {
       return e.toLowerCase() === categoryName;
     })
   );
-  console.log(categoryCourses);
 
   return (
     <div className="container-lg py-4 mx-auto">

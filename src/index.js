@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 
 // Styles
-import bootstrap from "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { GlobalStyle } from "./Components/Styles/GlobalStyle";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

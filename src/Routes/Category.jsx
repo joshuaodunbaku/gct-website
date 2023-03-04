@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
-// import Card from 'react-bootstrap/Card';
-import { useLocation, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import CourseCard from '../Components/CourseCard/CourseCard';
 import Grid from '../Components/Grid/Grid';
 import { ShowcaseWrapper } from '../Components/Styles/GlobalStyle';
@@ -13,7 +12,6 @@ import NavBar from './Navbar';
 const Category = () => {
     const { courses } = data;
     const { categories } = useParams();
-    console.log(categories, "from Category Comp");
     let categoryName = hyphenToSpace(categories).toLowerCase();
 
     // gets the courses that are in a category
@@ -21,8 +19,6 @@ const Category = () => {
         return e.toLowerCase() === categoryName;
     }));
 
-    console.log(categoryCourses);
-    let location = useLocation().pathname;
 
     useEffect(() => {
         const scrollToTop = () => {
@@ -30,7 +26,6 @@ const Category = () => {
         };
         scrollToTop();
     });
-    console.log(location.pathname);
     return (
         <>
             <NavBar />
