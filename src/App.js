@@ -10,13 +10,13 @@ import Course from "./Routes/Course";
 const App = () => {
   return (
     <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<AboutUs />} />
-        <Route path="courses" element={<Courses />} />
-        <Route path="courses/:categories" element={<Category />} />
-        <Route path="courses/:categories/:name" element={<Course />} />
-        <Route path="reviews" element={<Reviews />} />
-        <Route path="*" element={<Navigate to="/" />} />
+      <Route path="/" element={<Home />} />
+      <Route path="about" element={<AboutUs />} />
+      <Route path="courses" element={<Courses />} />
+      <Route path="courses/:categories" element={<Category />} />
+      <Route path="courses/:categories/:name" element={<Course />} />
+      <Route path="reviews" element={<Reviews />} />
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
 };

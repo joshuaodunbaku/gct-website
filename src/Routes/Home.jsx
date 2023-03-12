@@ -199,7 +199,7 @@ const Home = () => {
                     </div>
                     <div className="text-center">
                         <Link
-                            to={"/courses/web-development/data-strucutures-and-algorithm"}
+                            to={"/courses/web-development/data-strucutures-and-algorithms"}
                         >
                             <button className="text-white fw-bold fs-5 btn btn-outline-info rounded-pill px-5 py-3">
                                 Explore now...

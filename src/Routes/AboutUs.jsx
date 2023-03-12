@@ -1,4 +1,3 @@
-import React from 'react';
 import { ReactComponent as Img1 } from "../Assets/Images/undraw_web_devices_re_m8sc.svg";
 import { ReactComponent as Img3 } from "../Assets/Images/undraw_asset_selection_re_k5fj.svg";
 import { ShowcaseWrapper } from '../Components/Styles/GlobalStyle';
