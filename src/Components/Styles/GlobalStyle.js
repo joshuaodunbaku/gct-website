@@ -4,13 +4,10 @@ export const ShowcaseWrapper = styled.div`
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
     url(${({ bgImage: image }) => image}) no-repeat center center;
   background-size: 100%, cover;
-  background-attachment: fixed;
+  /* background-attachment: scroll; */
   /* background-size: 100%, cover; */
   /* background-position: top center; */
   min-height: ${({ height }) => height || "90vh"};
-  /* height: 90vh; */
-  /* padding: 0 30px; */
-
   @media (max-width: 578px) {
     height: ${({ height }) => height || "70vh"};
   }
@@ -54,7 +51,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* font-family: "Abel", sans-serif; */
+    font-family: "Abel", sans-serif;
 }
 
 body {
