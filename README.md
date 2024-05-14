@@ -1,2 +1,2 @@
 # gct-website
-#[Demo] (https://www.geniuscomputer.netlify.app)
+#[Demo](https://www.geniuscomputer.netlify.app)
